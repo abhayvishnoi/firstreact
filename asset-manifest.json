@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/firstreact/static/css/main.cc57879b.css",
+    "main.js": "/firstreact/static/js/main.559b7128.js",
+    "static/media/logohalf.png": "/firstreact/static/media/logohalf.0e654178f8fac622a591.png",
+    "index.html": "/firstreact/index.html",
+    "main.cc57879b.css.map": "/firstreact/static/css/main.cc57879b.css.map",
+    "main.559b7128.js.map": "/firstreact/static/js/main.559b7128.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc57879b.css",
+    "static/js/main.559b7128.js"
+  ]
+}
