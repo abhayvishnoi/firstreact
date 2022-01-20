@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: rgb(21, 22, 29);
+  font-family: Inter, sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #21222a;
+  padding: 15px;
+}
+.nav_logo_text {
+  color: #61dafb;
+  margin-right: auto;
+  font-size: 22px;
+}
+
+.nav_title {
+  color: #deebf8;
+}
+.nav-icon {
+  width: 40px;
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main {
+  padding: 57px 27px;
+  color: white;
+  background-image: url(images/logohalf.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+}
+.main_title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.list {
+  margin-top: 46px;
+}
+
+.list > li {
+  font-size: 20px;
+  padding-block: 10px;
+}
+
+.list > li::marker {
+  color: #61dafb;
+  font-size: 1.4rem;
+}
