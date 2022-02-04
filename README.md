@@ -1,3 +1,3 @@
 # React Facts app
 
-Check it out at https://abhayvisnoi.github.io/firstreact
+Check it out at https://abhayvishnoi.github.io/firstreact
