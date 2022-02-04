@@ -1,32 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+
 body {
-  margin: 0;
-  /* background-color: rgb(21, 22, 29); */
   font-family: Inter, sans-serif;
+  margin: 0;
+
+  /* background-color: rgb(21, 22, 29); */
 }
 
 .navbar {
+  font-family: "Fira Code", monospace;
   display: flex;
   align-items: center;
-  /* background-color: #21222a; */
   box-shadow: 1px 1px 5px 1px #d4d4d4;
-  padding: 15px;
+  padding: 0px 20px;
+  height: 90px;
+  transition: ease 0.7s;
 }
-.navbar.dark {
-  background-color: #21222a;
+
+.dark {
+  background-color: #2a2e35;
+  box-shadow: 4px 0 10px -3px #010101;
 }
 .nav_logo_text {
   color: #61dafb;
   margin-right: auto;
-  font-size: 22px;
+  font-size: 3rem;
 }
 
-.nav_title {
-  color: #deebf8;
-}
-
-.nav-icon {
-  width: 40px;
-  animation: spin 15s linear infinite;
+.nav-logo {
+  width: 3rem;
+  animation: spin 35s linear infinite;
 }
 
 @keyframes spin {
@@ -37,23 +40,24 @@ body {
 
 main {
   padding: 57px 27px;
-  /* color: white; */
-  height: 69.2vh;
+  /* height: 29.7rem; */
+  height: 31rem;
   background-image: url(images/logohalflight.png);
   background-repeat: no-repeat;
-  background-position: right 75%;
+  background-position: right 50%;
+  transition: ease 0.3s;
 }
 
 .maindark {
   color: white;
   background-image: url(images/logohalf.png);
-  background-color: rgb(21, 22, 29);
+  background-color: #12181b;
 }
 
 .main_title {
   margin: 0;
   font-size: 39px;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.01em;
 }
 
 .list {
@@ -62,7 +66,7 @@ main {
 
 .list > li {
   font-size: 20px;
-  padding-block: 10px;
+  padding: 2px;
 }
 
 .list > li::marker {
@@ -74,77 +78,32 @@ main {
   align-items: center;
 }
 
-.switch {
-  margin: 0px 5px;
+.nav-icon {
+  margin: 0px 4px;
   padding: 1px;
-  position: relative;
-  display: inline-block;
   width: 45px;
-  height: 25px;
+  height: 40px;
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.light-icon {
+  color: lightgoldenrodyellow;
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
+@media only screen and (max-width: 768px) {
+  .nav_logo_text {
+    color: #61dafb;
+    margin-right: auto;
+    font-size: 2rem;
+  }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-#light-text {
-  color: white;
-  opacity: 0.4;
-}
-
-#dark-text {
-  color: white;
-  opacity: 1;
-}
-#lessopac {
-  opacity: 0.4;
+  .nav-logo {
+    width: 3rem;
+    animation: spin 35s linear infinite;
+  }
+  .main_title {
+    font-size: 30px;
+  }
+  .main {
+    height: 31rem;
+  }
 }
